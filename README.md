@@ -1,2 +1,2 @@
 # Ajedrez
-Ajedrez programado en java
+Logica del ajedrez programado en java
