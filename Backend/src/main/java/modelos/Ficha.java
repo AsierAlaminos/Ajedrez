@@ -1,20 +1,18 @@
 package modelos;
 
-public class Ficha {
+public abstract class Ficha {
 
     private String posicion;
     private boolean vivo;
 
     public Ficha(){}
 
-    public Ficha(String posicion, boolean vivo) {
+    public Ficha(String posicion) {
         this.posicion = posicion;
-        this.vivo = vivo;
+        this.vivo = true;
     }
 
-    public void proxMov(String mov){
-        
-    }
+    public abstract void proxMov(String mov);
 
     public String getPosicion() {
         return posicion;
