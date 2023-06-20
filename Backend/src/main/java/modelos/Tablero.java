@@ -20,39 +20,38 @@ public class Tablero {
         ArrayList<Alfil> alfilesN = crearAlfil(8);
         ArrayList<Caballo> caballosB = crearCaballos(1);
         ArrayList<Caballo> caballosN = crearCaballos(8);
-        Reina reinaB = new Reina("d1");
-        Reina reinaN = new Reina("d8");
-        Rey reyB = new Rey("e1");
-        Rey reyN = new Rey("e8");
+        Reina reinaB = new Reina(4, 1);
+        Reina reinaN = new Reina(4, 8);
+        Rey reyB = new Rey(5, 1);
+        Rey reyN = new Rey(5, 8);
     }
 
     private ArrayList<Peon> crearPeones(int fila){
         ArrayList<Peon> peones = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
-            peones.add(new Peon(String.format("%c%d", col[i], fila)));
+            peones.add(new Peon(i, fila));
         }
         return peones;
     }
 
     private ArrayList<Torre> crearTorres(int fila){
         ArrayList<Torre> torres = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
-            torres.add(new Torre(String.format("%c%d", col[i * 8], fila)));
-        }
+        torres.add(new Torre(1, fila));
+        torres.add(new Torre(8, fila));
         return torres;
     }
 
     private ArrayList<Alfil> crearAlfil(int fila){
         ArrayList<Alfil> alfiles = new ArrayList<>();
-        alfiles.add(new Alfil(String.format("%c%d", col[2], fila)));
-        alfiles.add(new Alfil(String.format("%c%d", col[5], fila)));
+        alfiles.add(new Alfil(3, fila));
+        alfiles.add(new Alfil(6, fila));
         return alfiles;
     }
 
     private ArrayList<Caballo> crearCaballos(int fila){
         ArrayList<Caballo> caballos = new ArrayList<>();
-        caballos.add(new Caballo(String.format("%c%d", col[1], fila)));
-        caballos.add(new Caballo(String.format("%c%d", col[6], fila)));
+        caballos.add(new Caballo(2, fila));
+        caballos.add(new Caballo(7, fila));
         return caballos;
     }
 

@@ -2,11 +2,19 @@ package modelos;
 
 public class Alfil  extends Ficha{
 
-    public Alfil(String pos){
-        super(pos);
+    public Alfil() {
     }
-    @Override
-    public void proxMov(String mov) {
 
+    public Alfil(int x, int y) {
+        super(x, y);
+    }
+
+    @Override
+    public void proxMov(int x, int y) {
+        if ((x != super.getX() && y != super.getY()) && (x >= 1 && x <= 8 && y >= 1 && y <= 8)){
+            if (x - super.getX() == y - super.getY())
+                super.setX(x);
+                super.setY(y);
+        }
     }
 }

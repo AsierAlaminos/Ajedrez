@@ -2,24 +2,33 @@ package modelos;
 
 public abstract class Ficha {
 
-    private String posicion;
+    private int x, y;
     private boolean vivo;
 
     public Ficha(){}
 
-    public Ficha(String posicion) {
-        this.posicion = posicion;
-        this.vivo = true;
+    public Ficha(int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.vivo = vivo;
     }
 
-    public abstract void proxMov(String mov);
+    public abstract void proxMov(int x, int y);
 
-    public String getPosicion() {
-        return posicion;
+    public int getX() {
+        return x;
     }
 
-    public void setPosicion(String posicion) {
-        this.posicion = posicion;
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
     }
 
     public boolean isVivo() {

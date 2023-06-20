@@ -4,11 +4,14 @@ public class Rey  extends Ficha{
 
     public Rey(){}
 
-    public Rey(String pos){
-        super(pos);
+    public Rey(int x, int y) {
+        super(x, y);
     }
+
     @Override
-    public void proxMov(String mov) {
+    public void proxMov(int x, int y) {
 
     }
+
+
 }

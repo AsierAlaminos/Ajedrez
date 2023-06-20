@@ -4,11 +4,12 @@ public class Reina  extends Ficha{
 
     public Reina(){}
 
-    public Reina(String pos){
-        super(pos);
+    public Reina(int x, int y) {
+        super(x, y);
     }
+
     @Override
-    public void proxMov(String mov) {
+    public void proxMov(int x, int y) {
 
     }
 }
