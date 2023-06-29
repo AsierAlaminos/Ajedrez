@@ -5,8 +5,8 @@ public class Alfil  extends Ficha{
     public Alfil() {
     }
 
-    public Alfil(int x, int y) {
-        super(x, y);
+    public Alfil(int x, int y, String tipo) {
+        super(x, y, tipo);
     }
 
     @Override

@@ -5,8 +5,8 @@ public class Torre  extends Ficha{
     public Torre() {
     }
 
-    public Torre(int x, int y) {
-        super(x, y);
+    public Torre(int x, int y, String tipo) {
+        super(x, y, tipo);
     }
 
     @Override

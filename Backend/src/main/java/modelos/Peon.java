@@ -4,8 +4,8 @@ public class Peon extends Ficha{
 
     public Peon() {}
 
-    public Peon(int x, int y) {
-        super(x, y);
+    public Peon(int x, int y, String tipo) {
+        super(x, y, tipo);
     }
 
     @Override
